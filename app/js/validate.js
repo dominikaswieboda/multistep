@@ -40,9 +40,9 @@ $(document).ready(function(){
         },
         submitHandler: function(form) {
             if($('#radio1')[0].checked) {
-                form.action = '/ujawniajacy3b.html';
+                form.action = './ujawniajacy3b.html';
             } else {
-                form.action = '/ujawniajacy34a.html';
+                form.action = './ujawniajacy34a.html';
             }
             form.submit();
         }
@@ -102,9 +102,9 @@ $(document).ready(function(){
         },
         submitHandler: function(form) {
             if($('#radio3')[0].checked) {
-                form.action = '/ujawniajacy45b.html';
+                form.action = './ujawniajacy45b.html';
             } else {
-                form.action = '/ujawniajacy46c.html';
+                form.action = './ujawniajacy46c.html';
             }
             form.submit();
         }
