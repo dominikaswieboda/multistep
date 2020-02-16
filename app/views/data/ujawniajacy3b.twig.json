@@ -4,12 +4,12 @@
   "menu": [
     {
       "name": "data umowy",
-      "link": "/data-umowy.html",
+      "link": "/multistep/data-umowy.html",
       "active": false
     },
     {
       "name": "ujawniający informację",
-      "link": "/ujawniajacy3b.html",
+      "link": "/multistep/ujawniajacy2.html",
       "active": true
     }
   ]
