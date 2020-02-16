@@ -10,6 +10,15 @@ $(document).ready(function(){
         messages: {
             datepicker: "Wybierz datę umowy",
         },
+        invalidHandler: function(form, validator) {
+
+            if (!validator.numberOfInvalids())
+                return;
+            $('html, body').animate({
+                scrollTop: $(validator.errorList[0].element).offset().top
+            }, 500);
+
+        },
         submitHandler: function(form) {
             form.submit();
         }
@@ -38,11 +47,20 @@ $(document).ready(function(){
                 error.insertAfter( element );
             }
         },
+        invalidHandler: function(form, validator) {
+
+            if (!validator.numberOfInvalids())
+                return;
+            $('html, body').animate({
+                scrollTop: $(validator.errorList[0].element).offset().top
+            }, 500);
+
+        },
         submitHandler: function(form) {
             if($('#radio1')[0].checked) {
-                form.action = '/multistep//ujawniajacy3b.html';
+                form.action = '/multistep/ujawniajacy3b.html';
             } else {
-                form.action = '/multistep//ujawniajacy34a.html';
+                form.action = '/multistep/ujawniajacy34a.html';
             }
             form.submit();
         }
@@ -72,6 +90,15 @@ $(document).ready(function(){
             inputEmail4: 'Podaj adres e-mail',
             inputPhone: 'Podaj numer telefonu',
         },
+        invalidHandler: function(form, validator) {
+
+            if (!validator.numberOfInvalids())
+                return;
+            $('html, body').animate({
+                scrollTop: $(validator.errorList[0].element).offset().top
+            }, 500);
+
+        },
         submitHandler: function(form) {
             form.submit();
         }
@@ -99,6 +126,15 @@ $(document).ready(function(){
             { // This is the default behavior
                 error.insertAfter( element );
             }
+        },
+        invalidHandler: function(form, validator) {
+
+            if (!validator.numberOfInvalids())
+                return;
+            $('html, body').animate({
+                scrollTop: $(validator.errorList[0].element).offset().top
+            }, 500);
+
         },
         submitHandler: function(form) {
             if($('#radio3')[0].checked) {
@@ -134,6 +170,15 @@ $(document).ready(function(){
             inputEmail45b: 'Podaj adres e-mail',
             inputPhone45b: 'Podaj numer telefonu',
         },
+        invalidHandler: function(form, validator) {
+
+            if (!validator.numberOfInvalids())
+                return;
+            $('html, body').animate({
+                scrollTop: $(validator.errorList[0].element).offset().top
+            }, 500);
+
+        },
         submitHandler: function(form) {
             form.submit();
         }
@@ -158,6 +203,15 @@ $(document).ready(function(){
             inputName46c: 'Podaj imię osoby reprezentującej',
             inputUsername46c: 'Podaj nazwisko osoby reprezentującej',
             inputStatus46c: 'Podaj status osoby reprezentującej',
+        },
+        invalidHandler: function(form, validator) {
+
+            if (!validator.numberOfInvalids())
+                return;
+            $('html, body').animate({
+                scrollTop: $(validator.errorList[0].element).offset().top
+            }, 500);
+
         },
         submitHandler: function(form) {
             form.submit();
