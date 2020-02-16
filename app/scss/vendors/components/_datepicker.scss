@@ -1,0 +1,14 @@
+.gj-datepicker {
+  transition: $transition-base;
+  .btn {
+    background-color: $color-gray;
+  }
+  #datepicker-error {
+    order: 1;
+    width: 100%;
+  }
+}
+.gj-datepicker-bootstrap [role=right-icon] button:hover {
+  color: $color-gray;
+  background-color: $color-light-gray;
+}

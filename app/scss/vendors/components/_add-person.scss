@@ -1,0 +1,8 @@
+.add-person {
+  &__content {
+    &--expand {
+      display: none;
+      margin: 30px 0;
+    }
+  }
+}

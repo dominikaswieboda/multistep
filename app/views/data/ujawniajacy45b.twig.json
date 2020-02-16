@@ -1,0 +1,16 @@
+{
+  "title":"Ujawniający informacje",
+  "class": "form-page",
+  "menu": [
+    {
+      "name": "data umowy",
+      "link": "/data-umowy.html",
+      "active": false
+    },
+    {
+      "name": "ujawniający informację",
+      "link": "/ujawniajacy45b.html",
+      "active": true
+    }
+  ]
+}

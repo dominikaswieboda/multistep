@@ -1,0 +1,17 @@
+.nav {
+  &__item {
+    display: block;
+    text-decoration: none;
+    transition: $transition-base;
+    &:hover, &.active {
+      color: $color-blue;
+      text-decoration: none;
+    }
+    &.active {
+      font-weight: 700;
+    }
+    & + .nav__item {
+      padding-top: 10px;
+    }
+  }
+}

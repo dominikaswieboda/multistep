@@ -1,0 +1,42 @@
+<form class="multistep-form" id="reveal-info3b" action="">
+    <h2>{{ title }}</h2>
+    <!--  Wyskakuje wtedy kiedy naciśnieto TAK -->
+    <fieldset class="multistep-form__section">
+        <h5>Ujawniający informacje:
+            <a data-toggle="tooltip" data-placement="bottom" title="Mauris id vulputate sapien, ac bibendum nunc. Aenean sem enim, dapibus a metus in, viverra tristique justo." class="tooltip-info fas fa-question-circle"></a>
+        </h5>
+        <div class="form-check radio" >
+            <input class="form-check-input" type="radio" name="radioOptions3b" id="radio3" value="option3">
+            <label class="form-check-label" for="radio3">jednoosobowa działalność gospodarcza</label>
+        </div>
+        <div class="form-check radio">
+            <input class="form-check-input" type="radio" name="radioOptions3b" id="radio4" value="option4">
+            <label class="form-check-label" for="radio4">Spółka Akcyjna</label>
+        </div>
+        <div class="form-check radio">
+            <input class="form-check-input" type="radio" name="radioOptions3b" id="radio5" value="option5">
+            <label class="form-check-label" for="radio5">Spółka z ograniczoną odpowiedzialnością:</label>
+        </div>
+    </fieldset>
+    <div class="multistep-form__actions">
+        <div class="multistep-form__action">
+            <div class="multistep-form__action__prev">
+                <a href="/ujawniajacy2.html" class="btn btn--secondary">
+                    <i class="fas fa-arrow-left"></i>
+                    wróć
+                </a>
+            </div>
+            <div class="multistep-form__action__next">
+                <button type="submit" class="btn btn--secondary">dalej
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="multistep-form__action">
+            <button class="btn btn--primary">
+                <i class="far fa-save"></i>
+                zapisz i dokończ później
+            </button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,14 @@
+.tooltip {
+  &-info {
+    display: inline-block;
+  }
+  &-inner {
+    background-color: $color-gray !important;
+  }
+  &.bs-tooltip-bottom .arrow:before {
+    border-bottom-color: $color-gray !important;
+  }
+  &.bs-tooltip-bottom .arrow:before {
+    border-bottom-color: $color-gray !important;
+  }
+}

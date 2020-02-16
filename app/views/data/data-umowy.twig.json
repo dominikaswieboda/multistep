@@ -1,0 +1,16 @@
+{
+  "title":"Data umowy",
+  "class": "form-page",
+  "menu": [
+    {
+      "name": "data umowy",
+      "link": "./data-umowy.html",
+      "active": true
+    },
+    {
+      "name": "ujawniający informację",
+      "link": "./ujawniajacy2.html",
+      "active": false
+    }
+  ]
+}

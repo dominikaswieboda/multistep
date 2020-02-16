@@ -1,0 +1,33 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+button{
+  background: none;
+  padding: 0;
+  border: 0;
+}
+.btn {
+  padding: 5px 10px;
+  min-width: 100%;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: $transition-base;
+  display: inline-block;
+  text-align: center;
+  color: $color-white;
+  background-color: $color-light-blue;
+  border: 3px solid $color-light-blue;
+  &:hover {
+    background-color: $color-white;
+    color: $color-light-blue;
+  }
+  &--primary {
+    @include respond-to('small') {
+      min-width: 150px;
+    }
+  }
+  &--secondary {
+    min-width: 100px;
+  }
+}

@@ -1,0 +1,27 @@
+.float-button {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 10px;
+  right: 20px;
+  background-color: $color-light-gray;
+  color: $color-gray;
+  border: 1px solid $color-light-gray;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px $color-gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  transition: $transition-base;
+  @include respond-to('small') {
+    display: none;
+  }
+  &:hover {
+    background-color: $color-white;
+    color: $color-light-blue;
+    box-shadow: 2px 2px 3px $color-blue;
+    text-decoration: none;
+  }
+}

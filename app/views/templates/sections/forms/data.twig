@@ -1,0 +1,26 @@
+<form class="multistep-form" id="validate-data" action="/ujawniajacy2.html" autocomplete="off">
+    <h2>{{ title }}</h2>
+    <fieldset class="multistep-form__section">
+        <h5>Data zawarcia umowy:</h5>
+        <div class="form-row">
+            <div class="form-group col-md-6 col-lg-4">
+                <input id="datepicker" name="datepicker">
+            </div>
+        </div>
+    </fieldset>
+    <div class="multistep-form__actions">
+        <div class="multistep-form__action">
+            <div class="multistep-form__action__next">
+                <button type="submit" class="btn btn--secondary">dalej
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="multistep-form__action">
+            <button class="btn btn--primary">
+                <i class="far fa-save"></i>
+                zapisz i dokończ później
+            </button>
+        </div>
+    </div>
+</form>
