@@ -1,9 +1,0 @@
-<nav class="nav">
-    <div class="nav__items">
-        {% for item in menu %}
-            <a href="{{ item.link }}" class="nav__item {% if item.active %}active{% endif %}">
-                {{ item.name }}
-            </a>
-        {% endfor %}
-    </div>
-</nav>
