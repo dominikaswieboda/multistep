@@ -44,7 +44,9 @@
     }
     .form-control {
       &:focus {
-        border-color: $color-light-blue;
+        background-color: $bg-input-focus;
+        border-color: $border-input-focus;
+        box-shadow: none;
       }
     }
   }

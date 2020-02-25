@@ -30,6 +30,12 @@ $color-red: rgb(220, 53, 69) !default;
 /// Copy green color
 $color-green: rgb(0, 128, 0) !default;
 
+/// Copy input focus background color
+$bg-input-focus: rgba(0,153,204, 0.1) !default;
+
+/// Copy input focus border color
+$border-input-focus: #0099cc !default;
+
 /// Transition base
 $transition-base: 0.3s ease-in-out !default;
 

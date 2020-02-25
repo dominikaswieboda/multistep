@@ -8,7 +8,7 @@
 body {
   font-size: 14px;
   line-height: 22px;
-  font-family: 'Inconsolata', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   @include respond-to('medium') {
     font-size: 15px;
     line-height: 24px;
@@ -16,13 +16,16 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'Inconsolata', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0 0 30px;
   font-weight: normal;
+  @include respond-to('medium') {
+    margin: 0;
+  }
 }
 
 h4, h5 {
-  font-family: 'Inconsolata', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 5px 0;
   @include respond-to('medium') {
     margin: 12px 0;
@@ -34,7 +37,7 @@ h1 {
   line-height: 38px;
   letter-spacing: -0.63px;
   @include respond-to('medium') {
-    font-size: 64px;
+    font-size: 42px;
     line-height: 1;
     letter-spacing: -1.07px;
   }
@@ -45,7 +48,7 @@ h2 {
   line-height: 26px;
   letter-spacing: -0.13px;
   @include respond-to('medium') {
-    font-size: 38px;
+    font-size: 36px;
     line-height: 38px;
     letter-spacing: -0.2px;
   }
@@ -55,7 +58,7 @@ h3, legend {
   font-size: 18px;
   line-height: 28px;
   @include respond-to('medium') {
-    font-size: 32px;
+    font-size: 28px;
     line-height: 38px;
   }
 }
@@ -82,7 +85,7 @@ h5 {
 }
 p {
   margin: 0;
-  font-family: 'Inconsolata', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 12px;
   line-height: 18px;
@@ -97,7 +100,7 @@ legend {
   }
 }
 .btn {
-  font-family: 'Inconsolata', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   line-height: 18px;
   letter-spacing: 1px;

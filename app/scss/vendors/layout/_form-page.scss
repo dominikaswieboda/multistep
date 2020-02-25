@@ -10,7 +10,7 @@
     &__content {
       display: flex;
       flex-flow: column;
-      @include respond-to('large') {
+      @include respond-to('medium') {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -46,17 +46,15 @@
   &__content {
     flex: 1;
     order: 1;
-    @include respond-to('large') {
-      order: 2;
-    }
   }
   &__nav {
     order: 2;
     margin-top: 20px;
-    @include respond-to('large') {
+    @include respond-to('medium') {
       order: 1;
       margin-top: 0;
       margin-right: 20px;
+      width: 30%;
     }
   }
 }
