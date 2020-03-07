@@ -13,13 +13,16 @@ $color-white: rgb(255, 255, 255) !default;
 $color-black: rgb(0, 0, 0) !default;
 
 /// Copy gray color
-$color-gray: rgb(100, 99, 110) !default;
+$color-gray: rgb(93,93,93) !default;
 
 /// Copy light-gray color
-$color-light-gray: rgb(221, 221, 221) !default;
+$color-light-gray: rgb(244,244,244) !default;
 
 /// Copy light-blue color
 $color-light-blue: rgb(42, 168, 255) !default;
+
+/// Copy light-blue color
+$color-light-sec-blue: rgb(242, 245, 252) !default;
 
 /// Copy blue color
 $color-blue: rgb(0, 122, 206) !default;
@@ -34,13 +37,16 @@ $color-green: rgb(0, 128, 0) !default;
 $bg-input-focus: rgba(0,153,204, 0.1) !default;
 
 /// Copy input focus border color
-$border-input-focus: #0099cc !default;
+$border-input-focus: rgb(0,153,204) !default;
+
+/// Copy line color
+$line-color: rgb(222,222,222) !default;
 
 /// Transition base
 $transition-base: 0.3s ease-in-out !default;
 
 // Box-shadow
-$box-shadow: 0px 6px 7px 0px rgba(0,0,0,0.2) !default;
+$box-shadow: 0 0 10px 0 rgba(0,0,0,.1) !default;
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length

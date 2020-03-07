@@ -8,19 +8,21 @@ button{
   border: 0;
 }
 .btn {
-  padding: 5px 10px;
+  padding: 8px 20px;
   min-width: 100%;
   cursor: pointer;
-  border-radius: 2px;
-  transition: $transition-base;
+  border-radius: 45px;
   display: inline-block;
   text-align: center;
   color: $color-white;
   background-color: $color-light-blue;
-  border: 3px solid $color-light-blue;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: all $transition-base;
+  outline: none;
   &:hover {
     background-color: $color-white;
     color: $color-light-blue;
+    box-shadow: 0 8px 8px rgba($color-light-blue, 0.3);
   }
   &--primary {
     @include respond-to('small') {
@@ -29,5 +31,53 @@ button{
   }
   &--secondary {
     min-width: 100px;
+  }
+  &-save {
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      right: 5px;
+      top: 50%;
+      margin-top: -12px;
+      width: 24px;
+      height: 24px;
+      border: 2px solid;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-radius: 50%;
+      opacity: 0;
+      transition: opacity 0.5s;
+      animation: 0.8s linear infinite rotate;
+    }
+    &.sending{
+      pointer-events: none;
+      cursor: not-allowed;
+      &:before {
+        transition-delay: 0.5s;
+        transition-duration: 1s;
+        opacity: 1;
+      }
+    }
+    &.success {
+      &::after {
+        content: '\2713';
+        position: absolute;
+        right: 25px;
+      }
+    }
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+  .icon-save {
+    &.hidden {
+      display: none;
+    }
   }
 }

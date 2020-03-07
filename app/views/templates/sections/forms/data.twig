@@ -4,7 +4,10 @@
         <h5>Data zawarcia umowy:</h5>
         <div class="form-row">
             <div class="form-group col-md-6 col-lg-4">
-                <input id="datepicker" name="datepicker">
+                <div class="datepicker-content">
+                    <input id="datepicker" class="form-control" name="datepicker" data-toggle="datepicker" placeholder="dd/mm/rrrr">
+                    <i class="far fa-calendar"></i>
+                </div>
             </div>
         </div>
     </fieldset>
@@ -16,10 +19,10 @@
                 </button>
             </div>
         </div>
-        <div class="multistep-form__action">
-            <button class="btn btn--primary">
-                <i class="far fa-save"></i>
-                zapisz i dokończ później
+        <div class="multistep-form__action multistep-form__action--save">
+            <button type="submit" class="btn btn--primary btn-save">
+                <i class="icon-save far fa-save"></i>
+                <span class="change-text">zapisz i dokończ później</span>
             </button>
         </div>
     </div>

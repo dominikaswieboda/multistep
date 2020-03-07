@@ -33,24 +33,22 @@ h4, h5 {
 }
 
 h1 {
-  font-size: 38px;
+  font-size: 23px;
   line-height: 38px;
-  letter-spacing: -0.63px;
+  font-weight: 700;
   @include respond-to('medium') {
-    font-size: 42px;
+    font-size: 27px;
     line-height: 1;
     letter-spacing: -1.07px;
   }
 }
 
 h2 {
-  font-size: 23px;
+  font-size: 20px;
   line-height: 26px;
-  letter-spacing: -0.13px;
   @include respond-to('medium') {
-    font-size: 36px;
+    font-size: 23px;
     line-height: 38px;
-    letter-spacing: -0.2px;
   }
 }
 
@@ -79,7 +77,7 @@ h5 {
   font-size: 14px;
   line-height: 16px;
   @include respond-to('medium') {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 28px;
   }
 }
@@ -91,17 +89,16 @@ p {
   line-height: 18px;
 }
 legend {
-  color: $color-blue;
+  color: $color-black;
   text-align: center;
+  font-weight: 500;
+}
+strong {
   font-weight: 600;
-  padding: 5px 0;
-  @include respond-to('small') {
-    padding: 20px 0;
-  }
 }
 .btn {
   font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 18px;
   letter-spacing: 1px;
   font-weight: 500;

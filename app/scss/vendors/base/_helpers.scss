@@ -39,6 +39,15 @@ div.is-invalid {
   color: $color-red;
 }
 
+.star-red {
+  position: relative;
+  &::after {
+    content: '*';
+    color: $color-red;
+    position: absolute;
+  }
+}
+
 .success {
   color: $color-green;
 }

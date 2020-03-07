@@ -32,7 +32,7 @@
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <!-- Datepicker Styles -->
-<link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.css" rel="stylesheet" type="text/css" />
 <!-- main.css -->
 <link rel="stylesheet" href="assets/css/main.css">
 </head>
@@ -43,21 +43,26 @@
       <div class="form-page__header__content">
          <div class="form-page__header__items">
             <div class="form-page__header__item">
-               <h1>Formularz multistep</h1>
+               <h1>Umowa o zachowaniu poufności (NDA)</h1>
             </div>
             <div class="form-page__header__item">
                <div class="form-page__header__actions">
-                  <button class="btn btn--primary support-desktop">
-                     <i class="far fa-comment "></i>
-                     wsparcie
-                  </button>
+
+
+
+
                   <button class="btn btn--primary">podgląd</button>
                </div>
             </div>
          </div>
-         <div class="progress-bar">
-            <div class="progress-bar__content" style="width:25%">
-               <p class="percent">25%</p>
+         <div class="progress-line">
+            <div class="progress-area">
+               <div class="progress-area__content">
+                  <div class="progress-bar__content" style="width: 7%">
+                     <div class="stripped-bar"></div>
+                     <p class="progress-area__info">7%</p>
+                  </div>
+               </div>
             </div>
          </div>
       </div>
@@ -85,16 +90,24 @@
         
     </div>
 </nav>
+                    <div class="float-support">
+    <a href="#" class="float-button">
+        <i class="fab fa-facebook-messenger"></i>
+    </a>
+    <h3>Masz pytania?</h3>
+</div>
                 </div>
                 <div class="form-page__content">
                     <form class="multistep-form" id="reveal-info34a" action="">
-    <h2>Ujawniający informacje</h2>
     <!--  Wyskakuje wtedy kiedy naciśnieto NIE -->
     <fieldset class="multistep-form__section">
-        <legend>Dane osobowe:</legend>
+        <legend>Dane osobowe ujawniającego:</legend>
+        <div class="multistep-form__desc-heading">
+            <p>Tu wpisujemy informacje dotyczące <strong>osoby, która udostępnia</strong> swoje informacje innej osobie lub firmie</p>
+        </div>
         <div class="form-row">
             <div class="form-group col-sm-6">
-                <label for="inputName">Imię</label>
+                <label for="inputName" class="star-red">Imię</label>
                 <input type="text" class="form-control" id="inputName" name="inputName" placeholder="Imię">
             </div>
             <div class="form-group col-sm-6">
@@ -104,12 +117,12 @@
         </div>
         <div class="form-row">
             <div class="form-group col-sm-6">
-                <label for="inputEmail4">Email</label>
+                <label for="inputEmail4" class="star-red">Email</label>
                 <input type="email" class="form-control" id="inputEmail4" name="inputEmail4" placeholder="Email">
             </div>
             <div class="form-group col-sm-6">
                 <label for="inputPhone">Telefon</label>
-                <input type="number" class="form-control" id="inputPhone" name="inputPhone" placeholder="Telefon">
+                <input type="tel" class="form-control" id="inputPhone" name="inputPhone" placeholder="Telefon">
             </div>
         </div>
         <div class="form-row">
@@ -118,17 +131,16 @@
                 <input type="number" class="form-control" id="inputPesel">
             </div>
             <div class="form-group col-sm-6">
-                <label for="inputID">Seria i numer dowodu osobistego</label>
-                <input type="text" class="form-control" id="inputID">
-            </div>
-            <div class="form-group col-sm-6">
                 <label for="inputPassport">Seria i numer paszport</label>
                 <input type="text" class="form-control" id="inputPassport">
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="inputID">Seria i numer dowodu osobistego</label>
+                <input type="text" class="form-control" id="inputID">
             </div>
         </div>
     </fieldset>
     <fieldset class="multistep-form__section">
-        <legend>Dane kontaktowe:</legend>
         <div class="form-row">
             <div class="form-group col-sm-4">
                 <label for="inputStreet">Ulica</label>
@@ -166,10 +178,10 @@
                 </button>
             </div>
         </div>
-        <div class="multistep-form__action">
-            <button class="btn btn--primary">
-                <i class="far fa-save"></i>
-                zapisz i dokończ później
+        <div class="multistep-form__action multistep-form__action--save">
+            <button type="submit" class="btn btn--primary btn-save">
+                <i class="icon-save far fa-save"></i>
+                <span class="change-text">zapisz i dokończ później</span>
             </button>
         </div>
     </div>
@@ -179,9 +191,6 @@
         </div>
     </div>
 
-    <a href="#" class="float-button">
-        <i class="far fa-comment "></i>
-    </a>
 </main>
 
 
@@ -200,8 +209,11 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous">
 </script>
-<!-- Datepicker plugin -->
-<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+<!-- Datepicker -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/i18n/datepicker.pl-PL.min.js"></script>
+
+
 <!-- jQuery Validate -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
 <!-- Main script -->

@@ -1,8 +1,20 @@
 .nav {
+  background-color: $color-light-sec-blue;
+  padding: 23px;
+  &__items {
+    width: 100%;
+  }
   &__item {
     display: block;
     text-decoration: none;
     transition: $transition-base;
+    border-bottom: 1px solid $line-color;
+    line-height: 23px;
+    list-style: none;
+    color: $color-gray;
+    cursor: pointer;
+    width: 100%;
+    padding-bottom: 10px;
     &:hover, &.active {
       color: $color-blue;
       text-decoration: none;

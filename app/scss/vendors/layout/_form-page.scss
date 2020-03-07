@@ -1,9 +1,7 @@
 .form-page {
-  padding: 60px 0;
-  &__header__content, &__nav, &__content {
-    border: 1px solid $color-light-gray;
-    border-radius: 10px;
-    padding: 10px;
+  padding: 10px 0;
+  @include respond-to('medium') {
+    padding: 60px 0;
   }
   &__wrapper {
     margin: 20px 0;
@@ -46,10 +44,16 @@
   &__content {
     flex: 1;
     order: 1;
+    box-shadow: $box-shadow;
+    padding: 30px 20px;
+    @include respond-to('small') {
+      padding: 10xp 20px;
+    }
   }
   &__nav {
     order: 2;
     margin-top: 20px;
+    position: relative;
     @include respond-to('medium') {
       order: 1;
       margin-top: 0;

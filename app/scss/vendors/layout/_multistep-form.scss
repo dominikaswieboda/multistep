@@ -1,5 +1,12 @@
 .multistep-form {
   position: relative;
+  &__desc-heading {
+    margin: 10px 0 40px;
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
   &__actions {
     display: flex;
     align-items: flex-end;
@@ -47,6 +54,9 @@
         background-color: $bg-input-focus;
         border-color: $border-input-focus;
         box-shadow: none;
+      }
+      &.is-invalid {
+        background-color: rgba(250,72,72,.11);
       }
     }
   }
