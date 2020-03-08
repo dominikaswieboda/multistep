@@ -1299,9 +1299,12 @@ button {
   border-bottom-color: #5d5d5d !important;
 }
 
-.add-person__content--expand {
+.add-person__content:first-child .btn-cancel {
   display: none;
-  margin: 30px 0;
+}
+
+.add-person__content .btn-cancel {
+  margin-bottom: 40px;
 }
 
 .datepicker-content .form-control {

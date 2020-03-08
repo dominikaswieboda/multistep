@@ -88,6 +88,10 @@
                 ujawniający informację
             </a>
         
+            <a href="/multistep/otrzymujacy2.html" class="nav__item ">
+                otrzymujący informację
+            </a>
+        
     </div>
 </nav>
                     <div class="float-support">
@@ -98,12 +102,12 @@
 </div>
                 </div>
                 <div class="form-page__content">
-                    <form class="multistep-form" id="reveal-info46c" action="">
+                    <form class="multistep-form" id="reveal-info46c" action="/multistep/otrzymujacy2.html">
     <!--  Wyskakuje wtedy kiedy naciśnieto Spółka Akcyjna lub Spółka z ograniczoną odpowiedzialnością -->
     <fieldset class="multistep-form__section">
         <legend>Dane firmy:</legend>
         <div class="multistep-form__desc-heading">
-            <p>Tu wpisujemy informacje dotyczące <strong>firmy, która udostępnia</strong>informacje</p>
+            <p>Tu wpisujemy informacje dotyczące <strong>firmy, która udostępnia</strong> informacje</p>
         </div>
         <div class="form-row">
             <div class="form-group col-md-12">
@@ -171,54 +175,33 @@
     <fieldset class="multistep-form__section">
         <legend>Zarząd / przedstawieciel ujawniającego:</legend>
         <div class="add-person">
-            <div class="add-person__content">
-                <div class="form-row">
-                    <div class="form-group col-sm-6">
-                        <label for="inputName46c">Imię osoby reprezentującej firmę</label>
-                        <input type="text" class="form-control" id="inputName46c" name="inputName46c" placeholder="Imię">
+            <div class="add-person__wrapper">
+                <div class="add-person__content">
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <label for="inputName911c">Imię osoby reprezentującej firmę</label>
+                            <input type="text" class="form-control" id="inputName911c" name="inputName911c" placeholder="Imię">
+                        </div>
                     </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-sm-6">
-                        <label for="inputUsername46c">Nazwisko osoby reprezentującej firmę</label>
-                        <input type="text" class="form-control" id="inputUsername46c" name="inputUsername46c" placeholder="Nazwisko">
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <label for="inputUsername911c">Nazwisko osoby reprezentującej firmę</label>
+                            <input type="text" class="form-control" id="inputUsername911c" name="inputUsername911c" placeholder="Nazwisko">
+                        </div>
                     </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-sm-6">
-                        <label for="inputStatus46c">Status osoby reprezentującej firmę</label>
-                        <input type="text" class="form-control" id="inputStatus46c"  name="inputStatus46c" placeholder="Status">
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <label for="inputStatus911c">Status osoby reprezentującej firmę</label>
+                            <input type="text" class="form-control" id="inputStatus911c"  name="inputStatus911c" placeholder="Status">
+                        </div>
                     </div>
+                    <button class="btn btn--primary btn-cancel">usuń  <i class="far fa-trash-alt"></i></button>
                 </div>
             </div>
             <div class="add-person__action">
                 <button class="btn btn--primary btn-add">dodaj nową osobę
                     <i class="fas fa-plus"></i>
                 </button>
-            </div>
-            <div class="add-person__content add-person__content--expand">
-                <div class="form-row">
-                    <div class="form-group col-sm-6">
-                        <label for="inputName2">Imię osoby reprezentującej firmę</label>
-                        <input type="text" class="form-control" id="inputName2" placeholder="Imię">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-sm-6">
-                        <label for="inputUsername2">Nazwisko osoby reprezentującej firmę</label>
-                        <input type="text" class="form-control" id="inputUsername2" placeholder="Nazwisko">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-sm-6">
-                        <label for="inputStatus2">Status osoby reprezentującej firmę</label>
-                        <input type="text" class="form-control" id="inputStatus2" placeholder="Status">
-                    </div>
-                </div>
-                <div class="add-person__action">
-                    <button class="btn btn--secondary btn-add">zapisz</button>
-                    <button class="btn btn--secondary btn-cancel">anuluj</button>
-                </div>
             </div>
         </div>
     </fieldset>
