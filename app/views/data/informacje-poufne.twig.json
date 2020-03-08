@@ -1,11 +1,11 @@
 {
-  "title":"Data umowy",
+  "title":"Rodzaj informacji poufnych",
   "class": "form-page",
   "menu": [
     {
       "name": "data umowy",
       "link": "/multistep/data-umowy.html",
-      "active": true
+      "active": false
     },
     {
       "name": "ujawniający informację",
@@ -25,7 +25,7 @@
     {
       "name": "rodzaj informacji poufnych",
       "link": "/multistep/informacje-poufne.html",
-      "active": false
+      "active": true
     }
   ]
 }

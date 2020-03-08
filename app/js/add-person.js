@@ -31,11 +31,6 @@ $(document).ready(function(){
     $('.add-person__wrapper').on('click', '.btn-cancel', function() {
         //fade out section
         $('.btn-cancel').closest('.add-person__wrapper').find('.add-person__content').not(':first').last().remove();
-        // $(this).parent().fadeOut(300, function(){
-        //     //remove parent element (main section)
-        //     $(this).empty();
-        //     return false;
-        // });
         return false;
     });
 });

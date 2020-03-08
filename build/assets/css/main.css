@@ -1071,6 +1071,14 @@ div.is-invalid {
   background-color: rgba(250, 72, 72, 0.11);
 }
 
+.multistep-form__section--show {
+  display: none;
+}
+
+.multistep-form__section--show.active {
+  display: block;
+}
+
 button {
   background: none;
   padding: 0;
@@ -1109,6 +1117,19 @@ button {
 
 .btn--secondary {
   min-width: 100px;
+}
+
+.btn--gray {
+  background-color: #5d5d5d;
+  color: white;
+  border-radius: 5px;
+}
+
+.btn--gray:hover {
+  background-color: #f4f4f4;
+  color: #5d5d5d;
+  -webkit-box-shadow: 0 8px 8px rgba(93, 93, 93, 0.3);
+          box-shadow: 0 8px 8px rgba(93, 93, 93, 0.3);
 }
 
 .btn-save {
@@ -1384,6 +1405,45 @@ button {
 .float-button:hover {
   color: #2aa8ff;
   text-decoration: none;
+}
+
+.add-info {
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media (min-width: 576px) {
+  .add-info {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (min-width: 576px) {
+  .add-info .input-group {
+    width: 50%;
+  }
+}
+
+.add-info__action {
+  margin-top: 20px;
+}
+
+@media (min-width: 576px) {
+  .add-info__action {
+    margin-left: 20px;
+    margin-top: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

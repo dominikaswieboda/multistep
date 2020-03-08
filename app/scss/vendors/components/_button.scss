@@ -32,6 +32,16 @@ button{
   &--secondary {
     min-width: 100px;
   }
+  &--gray {
+    background-color: $color-gray;
+    color: $color-white;
+    border-radius: 5px;
+    &:hover {
+      background-color: $color-light-gray;
+      color: $color-gray;
+      box-shadow: 0 8px 8px rgba($color-gray, 0.3);
+    }
+  }
   &-save {
     position: relative;
     &:before {

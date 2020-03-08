@@ -16,6 +16,16 @@
       "name": "otrzymujący informację",
       "link": "/multistep/otrzymujacy2.html",
       "active": true
+    },
+    {
+      "name": "cel umowy",
+      "link": "/multistep/cel-umowy.html",
+      "active": false
+    },
+    {
+      "name": "rodzaj informacji poufnych",
+      "link": "/multistep/informacje-poufne.html",
+      "active": false
     }
   ]
 }

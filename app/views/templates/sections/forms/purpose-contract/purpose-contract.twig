@@ -1,22 +1,30 @@
-<form class="multistep-form" id="get-info2" action="">
+<form class="multistep-form" id="purpose-contract" action="/multistep/informacje-poufne.html">
     <h2>{{ title }}</h2>
     <fieldset class="multistep-form__section">
-        <h5>Prowadzi działalność gospodarczą:
+        <h5>Czy chcesz rozszerzać cel tej umowy:
             <a data-toggle="tooltip" data-placement="bottom" title="Mauris id vulputate sapien, ac bibendum nunc. Aenean sem enim, dapibus a metus in, viverra tristique justo." class="tooltip-info fas fa-question-circle"></a>
         </h5>
-        <div class="form-check radio">
-            <input class="form-check-input" type="radio" name="radioOptions7" id="radio7" value="option7">
-            <label class="form-check-label" for="radio7">tak</label>
+        <div class="form-check form-check--show radio">
+            <input class="form-check-input" type="radio" name="radioOptions12" id="radio12a" value="option1">
+            <label class="form-check-label" for="radio12a">tak</label>
         </div>
         <div class="form-check radio">
-            <input class="form-check-input" type="radio" name="radioOptions7" id="radio7a" value="option7">
-            <label class="form-check-label" for="radio7a">nie</label>
+            <input class="form-check-input" type="radio" name="radioOptions12" id="radio12b" value="option2">
+            <label class="form-check-label" for="radio12b">nie</label>
+        </div>
+    </fieldset>
+    <fieldset class="multistep-form__section multistep-form__section--show">
+        <div class="form-row">
+            <div class="form-group col-12">
+                <label for="formControlTextarea1">Obie strony wyraziły zainteresowanie zbadaniem potencjalnej relacji biznesowej związanej z:</label>
+                <textarea class="form-control" id="formControlTextarea1"  name="formControlTextarea1" rows="3"></textarea>
+            </div>
         </div>
     </fieldset>
     <div class="multistep-form__actions">
         <div class="multistep-form__action">
             <div class="multistep-form__action__prev">
-                <a href="/multistep/ujawniajacy34a.html" class="btn btn--secondary">
+                <a href="" class="btn btn--secondary">
                     <i class="fas fa-arrow-left"></i>
                     wróć
                 </a>

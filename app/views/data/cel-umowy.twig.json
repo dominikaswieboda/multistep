@@ -1,11 +1,11 @@
 {
-  "title":"Data umowy",
+  "title":"Cel umowy",
   "class": "form-page",
   "menu": [
     {
       "name": "data umowy",
       "link": "/multistep/data-umowy.html",
-      "active": true
+      "active": false
     },
     {
       "name": "ujawniający informację",
@@ -20,7 +20,7 @@
     {
       "name": "cel umowy",
       "link": "/multistep/cel-umowy.html",
-      "active": false
+      "active": true
     },
     {
       "name": "rodzaj informacji poufnych",

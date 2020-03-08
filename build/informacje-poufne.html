@@ -8,7 +8,7 @@
 <link rel="shortcut icon" href="./assets/images/favicon.ico"/>
 
 <!-- Primary Meta Tags -->
-<title>Ujawniający informacje</title>
+<title>Rodzaj informacji poufnych</title>
 <meta name="title" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
 <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
 <meta name="keywords" content="Lorem, ipsum, dolor, sit, amet, consectetur, adipiscing, elit">
@@ -84,7 +84,7 @@
                 data umowy
             </a>
         
-            <a href="/multistep/ujawniajacy2.html" class="nav__item active">
+            <a href="/multistep/ujawniajacy2.html" class="nav__item ">
                 ujawniający informację
             </a>
         
@@ -96,7 +96,7 @@
                 cel umowy
             </a>
         
-            <a href="/multistep/informacje-poufne.html" class="nav__item ">
+            <a href="/multistep/informacje-poufne.html" class="nav__item active">
                 rodzaj informacji poufnych
             </a>
         
@@ -110,76 +110,40 @@
 </div>
                 </div>
                 <div class="form-page__content">
-                    <form class="multistep-form" id="reveal-info34a" action="/multistep/otrzymujacy2.html">
-    <!--  Wyskakuje wtedy kiedy naciśnieto NIE -->
+                    <form class="multistep-form" id="purpose-contract" action="/multistep/informacje-poufne.html">
+    <h2>Rodzaj informacji poufnych</h2>
     <fieldset class="multistep-form__section">
-        <legend>Dane osobowe ujawniającego:</legend>
-        <div class="multistep-form__desc-heading">
-            <p>Tu wpisujemy informacje dotyczące <strong>osoby, która udostępnia</strong> swoje informacje innej osobie lub firmie</p>
-        </div>
-        <div class="form-row">
-            <div class="form-group col-sm-6">
-                <label for="inputName" class="star-red">Imię</label>
-                <input type="text" class="form-control" id="inputName" name="inputName" placeholder="Imię">
+        <h5>Jakie kategorie informacji poufnych należy określić w niniejszej umowie:
+            <a data-toggle="tooltip" data-placement="bottom" title="Mauris id vulputate sapien, ac bibendum nunc. Aenean sem enim, dapibus a metus in, viverra tristique justo." class="tooltip-info fas fa-question-circle"></a>
+        </h5>
+        <div class="confidential-information">
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+                <label class="custom-control-label" for="customCheck1">Lorem ipsum 1</label>
             </div>
-            <div class="form-group col-sm-6">
-                <label for="inputUsername">Nazwisko</label>
-                <input type="text" class="form-control" id="inputUsername" name="inputUsername" placeholder="Nazwisko">
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="form-group col-sm-6">
-                <label for="inputEmail4" class="star-red">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" name="inputEmail4" placeholder="Email">
-            </div>
-            <div class="form-group col-sm-6">
-                <label for="inputPhone">Telefon</label>
-                <input type="tel" class="form-control" id="inputPhone" name="inputPhone" placeholder="Telefon">
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                <label class="custom-control-label" for="customCheck2">Lorem ipsum 1</label>
             </div>
         </div>
-        <div class="form-row">
-            <div class="form-group col-sm-6">
-                <label for="inputPesel">Pesel</label>
-                <input type="number" class="form-control" id="inputPesel">
+        <div class="add-info">
+            <div class="input-group">
+
+
+
+
+
+                <input type="text" id="add-value" class="form-control" aria-label="Text input with checkbox">
             </div>
-            <div class="form-group col-sm-6">
-                <label for="inputPassport">Seria i numer paszport</label>
-                <input type="text" class="form-control" id="inputPassport">
-            </div>
-            <div class="form-group col-sm-6">
-                <label for="inputID">Seria i numer dowodu osobistego</label>
-                <input type="text" class="form-control" id="inputID">
-            </div>
-        </div>
-    </fieldset>
-    <fieldset class="multistep-form__section">
-        <div class="form-row">
-            <div class="form-group col-sm-4">
-                <label for="inputStreet">Ulica</label>
-                <input type="text" class="form-control" id="inputStreet">
-            </div>
-            <div class="form-group col-sm-4">
-                <label for="inputNumberStreet">Numer ulicy</label>
-                <input type="text" class="form-control" id="inputNumberStreet">
-            </div>
-            <div class="form-group col-sm-4">
-                <label for="inputNumberLocal">Numer lokalu</label>
-                <input type="text" class="form-control" id="inputNumberLocal">
-            </div>
-            <div class="form-group col-sm-4">
-                <label for="inputCity">Miejscowość</label>
-                <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="form-group col-sm-4">
-                <label for="inputCityKey">Kod pocztowy</label>
-                <input type="text" class="form-control" id="inputCityKey">
+            <div class="add-info__action">
+                <button class="btn btn--secondary btn--gray btn-add-info">Dodaj własne</button>
             </div>
         </div>
     </fieldset>
     <div class="multistep-form__actions">
         <div class="multistep-form__action">
             <div class="multistep-form__action__prev">
-                <a href="/multistep/ujawniajacy3b.html" class="btn btn--secondary">
+                <a href="" class="btn btn--secondary">
                     <i class="fas fa-arrow-left"></i>
                     wróć
                 </a>

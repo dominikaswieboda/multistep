@@ -1,6 +1,8 @@
 import  "./add-person";
 import "./validation/reveal-info";
 import "./validation/get-info";
+import "./validation/purpose-contract";
+import "./add-confidential-info";
 
 // Nodelist Foreach polyfill
 if (window.NodeList && !NodeList.prototype.forEach) {
@@ -41,6 +43,14 @@ $(document).ready(function(){
         changeIcon.removeClass('hidden');
       }, 1000);
     },3000);
+  });
 
-  })
+  //Show textarea
+  $('[name="radioOptions12"]').on('change', function () {
+    if(this.value == 'option1') {
+      $('.multistep-form__section--show').addClass('active');
+    } else {
+      $('.multistep-form__section--show').removeClass('active');
+    }
+  });
 });
