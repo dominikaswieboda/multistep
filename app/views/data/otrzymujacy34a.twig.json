@@ -1,5 +1,5 @@
 {
-  "title":"Ujawniający informacje",
+  "title":"Otrzymujacy informacje",
   "class": "form-page",
   "menu": [
     {
@@ -10,12 +10,12 @@
     {
       "name": "ujawniający informację",
       "link": "/multistep/ujawniajacy2.html",
-      "active": true
+      "active": false
     },
     {
       "name": "otrzymujący informację",
       "link": "/multistep/otrzymujacy2.html",
-      "active": false
+      "active": true
     }
   ]
 }

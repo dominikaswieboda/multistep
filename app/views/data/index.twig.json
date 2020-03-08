@@ -11,6 +11,11 @@
       "name": "ujawniający informację",
       "link": "./ujawniajacy2.html",
       "active": false
+    },
+    {
+      "name": "otrzymujący informację",
+      "link": "./otrzymujacy2.html",
+      "active": false
     }
   ]
 }

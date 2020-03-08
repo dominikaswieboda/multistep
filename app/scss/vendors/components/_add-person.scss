@@ -1,8 +1,12 @@
 .add-person {
   &__content {
-    &--expand {
-      display: none;
-      margin: 30px 0;
+    &:first-child {
+      .btn-cancel {
+        display: none;
+      }
+    }
+    .btn-cancel {
+      margin-bottom: 40px;
     }
   }
 }

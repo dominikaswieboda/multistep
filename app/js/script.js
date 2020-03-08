@@ -1,5 +1,6 @@
-import {RevealInfo} from "./reveal-info";
-import "./validate";
+import  "./add-person";
+import "./validation/reveal-info";
+import "./validation/get-info";
 
 // Nodelist Foreach polyfill
 if (window.NodeList && !NodeList.prototype.forEach) {
@@ -14,10 +15,12 @@ if (window.NodeList && !NodeList.prototype.forEach) {
 $(document).ready(function(){
   // Tooltip info
   $('[data-toggle="tooltip"]').tooltip();
+
   // Datapicker
   $('[data-toggle="datepicker"]').datepicker({
     language: 'pl-PL'
   });
+
   // Save document
   $(' .multistep-form__action--save .btn-save').on('click', function(e){
     e.preventDefault();

@@ -11,6 +11,11 @@
       "name": "ujawniający informację",
       "link": "/multistep/ujawniajacy2.html",
       "active": false
+    },
+    {
+      "name": "otrzymujący informację",
+      "link": "/multistep/otrzymujacy2.html",
+      "active": false
     }
   ]
 }
