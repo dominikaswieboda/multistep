@@ -1343,7 +1343,7 @@ button {
 .float-support {
   position: fixed;
   bottom: 10px;
-  right: 20px;
+  right: 15px;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1363,7 +1363,7 @@ button {
 @media (min-width: 768px) {
   .float-support {
     position: absolute;
-    bottom: -50%;
+    bottom: -70px;
     right: 0;
   }
 }
@@ -1407,6 +1407,15 @@ button {
   text-decoration: none;
 }
 
+.confidential-information .custom-checkbox .custom-control-input:checked ~ .custom-control-label:before {
+  background-color: #2aa8ff;
+}
+
+.confidential-information .custom-checkbox .custom-control-input:focus ~ .custom-control-label:before {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .add-info {
   width: 100%;
   margin-top: 20px;
@@ -1426,6 +1435,11 @@ button {
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -1444,6 +1458,36 @@ button {
     margin-left: 20px;
     margin-top: 0;
   }
+}
+
+@media (min-width: 576px) {
+  .add-info__content {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.add-info__error {
+  display: none;
+}
+
+.add-info__error.is-invalid {
+  display: block;
+}
+
+.expand-info__content {
+  padding: 40px 0;
 }
 
 /*# sourceMappingURL=main.css.map */
