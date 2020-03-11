@@ -26,6 +26,21 @@
       "name": "rodzaj informacji poufnych",
       "link": "/multistep/informacje-poufne.html",
       "active": false
+    },
+    {
+      "name": "kara umowna",
+      "link": "/multistep/kara-umowna.html",
+      "active": false
+    },
+    {
+      "name": "czas trwania umowy",
+      "link": "/multistep/czas-trwania-umowy.html",
+      "active": false
+    },
+    {
+      "name": "postanowienia umowy",
+      "link": "/multistep/postanowienia-umowy.html",
+      "active": false
     }
   ]
 }

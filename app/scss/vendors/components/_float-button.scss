@@ -2,7 +2,7 @@
   &-support {
     position: fixed;
     bottom: 10px;
-    right: 20px;
+    right: 15px;
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -10,7 +10,7 @@
     z-index: 1;
     @include respond-to('medium') {
       position: absolute;
-      bottom: -50%;
+      bottom: -70px;
       right: 0;
     }
     h3 {

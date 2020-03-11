@@ -1,5 +1,5 @@
 {
-  "title":"Cel umowy",
+  "title":"Postanowienia umowy",
   "class": "form-page",
   "menu": [
     {
@@ -20,7 +20,7 @@
     {
       "name": "cel umowy",
       "link": "/multistep/cel-umowy.html",
-      "active": true
+      "active": false
     },
     {
       "name": "rodzaj informacji poufnych",
@@ -40,7 +40,7 @@
     {
       "name": "postanowienia umowy",
       "link": "/multistep/postanowienia-umowy.html",
-      "active": false
+      "active": true
     }
   ]
 }

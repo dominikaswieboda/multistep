@@ -1,0 +1,14 @@
+.confidential-information {
+  .custom-checkbox {
+    .custom-control {
+      &-input {
+        &:checked~.custom-control-label:before {
+          background-color: $color-light-blue;
+        }
+        &:focus~.custom-control-label:before {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}

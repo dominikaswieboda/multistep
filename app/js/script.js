@@ -1,7 +1,7 @@
 import  "./add-person";
 import "./validation/reveal-info";
 import "./validation/get-info";
-import "./validation/purpose-contract";
+import "./validation/expand-info";
 import "./add-confidential-info";
 
 // Nodelist Foreach polyfill

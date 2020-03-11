@@ -1,5 +1,5 @@
 {
-  "title":"Cel umowy",
+  "title":"Kara umowna",
   "class": "form-page",
   "menu": [
     {
@@ -20,7 +20,7 @@
     {
       "name": "cel umowy",
       "link": "/multistep/cel-umowy.html",
-      "active": true
+      "active": false
     },
     {
       "name": "rodzaj informacji poufnych",
@@ -30,7 +30,7 @@
     {
       "name": "kara umowna",
       "link": "/multistep/kara-umowna.html",
-      "active": false
+      "active": true
     },
     {
       "name": "czas trwania umowy",

@@ -1,29 +1,25 @@
-<form class="multistep-form" id="confidentional-information" action="/multistep/kara-umowna.html">
+{#Cel umowy#}
+<form class="multistep-form" id="expand-info" action="/multistep/informacje-poufne.html">
     <h2>{{ title }}</h2>
     <fieldset class="multistep-form__section">
-        <h5>Jakie kategorie informacji poufnych należy określić w niniejszej umowie:
+        <h5>Czy chcesz rozszerzać cel tej umowy:
             <a data-toggle="tooltip" data-placement="bottom" title="Mauris id vulputate sapien, ac bibendum nunc. Aenean sem enim, dapibus a metus in, viverra tristique justo." class="tooltip-info fas fa-question-circle"></a>
         </h5>
-        <div class="confidential-information">
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
-                <label class="custom-control-label" for="customCheck1">Lorem ipsum 1</label>
-            </div>
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck2">
-                <label class="custom-control-label" for="customCheck2">Lorem ipsum 1</label>
-            </div>
+        <div class="form-check form-check--show radio">
+            <input class="form-check-input" type="radio" name="radioOptions12" id="radio12a" value="option1">
+            <label class="form-check-label" for="radio12a">tak</label>
         </div>
-        <div class="add-info">
-            <div class="add-info__content">
-                <div class="input-group">
-                    <input type="text" id="add-value" class="form-control" aria-label="Text input with checkbox">
-                </div>
-                <div class="add-info__action">
-                    <button type="submit" class="btn btn--secondary btn--gray btn-add-info">Dodaj własne</button>
-                </div>
+        <div class="form-check radio">
+            <input class="form-check-input" type="radio" name="radioOptions12" id="radio12b" value="option2">
+            <label class="form-check-label" for="radio12b">nie</label>
+        </div>
+    </fieldset>
+    <fieldset class="multistep-form__section multistep-form__section--show">
+        <div class="form-row">
+            <div class="form-group col-12">
+                <label for="formControlTextarea1">Obie strony wyraziły zainteresowanie zbadaniem potencjalnej relacji biznesowej związanej z:</label>
+                <textarea class="form-control" id="formControlTextarea1"  name="formControlTextarea1" rows="3"></textarea>
             </div>
-            <div class="add-info__error">Dodaj informacje</div>
         </div>
     </fieldset>
     <div class="multistep-form__actions">

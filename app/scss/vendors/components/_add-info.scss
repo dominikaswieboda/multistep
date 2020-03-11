@@ -5,6 +5,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    flex-direction: column;
   }
   .input-group {
     @include respond-to('small') {
@@ -16,6 +17,20 @@
     @include respond-to('small') {
       margin-left: 20px;
       margin-top: 0;
+    }
+  }
+  &__content {
+    @include respond-to('small') {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+  &__error {
+    display: none;
+    &.is-invalid {
+      display: block;
     }
   }
 }
