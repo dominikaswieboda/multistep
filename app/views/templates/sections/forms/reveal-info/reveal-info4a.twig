@@ -1,0 +1,64 @@
+<form class="multistep-form" id="reveal-info4a" action="/multistep/otrzymujacy2.html">
+    <!--  Wyskakuje wtedy kiedy naciśnieto NIE -->
+    <fieldset class="multistep-form__section">
+        <legend>Dane kontaktowe ujawniającego informacje:</legend>
+        <div class="multistep-form__desc-heading">
+            <p>Tu wpisujemy informacje dotyczące <strong>osoby, która udostępnia</strong> swoje informacje innej osobie lub firmie</p>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-sm-4">
+                <label for="inputStreet">Ulica</label>
+                <input type="text" class="form-control" id="inputStreet">
+            </div>
+            <div class="form-group col-sm-4">
+                <label for="inputNumberStreet">Numer ulicy</label>
+                <input type="text" class="form-control" id="inputNumberStreet">
+            </div>
+            <div class="form-group col-sm-4">
+                <label for="inputNumberLocal">Numer lokalu</label>
+                <input type="text" class="form-control" id="inputNumberLocal">
+            </div>
+            <div class="form-group col-sm-4">
+                <label for="inputCity">Miejscowość</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-sm-4">
+                <label for="inputCityKey">Kod pocztowy</label>
+                <input type="text" class="form-control" id="inputCityKey">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="inputEmail4" class="star-red">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" name="inputEmail4" placeholder="Email">
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="inputPhone">Telefon</label>
+                    <input type="tel" class="form-control" id="inputPhone" name="inputPhone" placeholder="Telefon">
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <div class="multistep-form__actions">
+        <div class="multistep-form__action">
+            <div class="multistep-form__action__prev">
+                <a href="/multistep/ujawniajacy3a.html" class="btn btn--secondary">
+                    <i class="fas fa-arrow-left"></i>
+                    wróć
+                </a>
+            </div>
+            <div class="multistep-form__action__next">
+                <button type="submit" class="btn btn--secondary">dalej
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="multistep-form__action multistep-form__action--save">
+            <button type="submit" class="btn btn--primary btn-save">
+                <i class="icon-save far fa-save"></i>
+                <span class="change-text">zapisz i dokończ później</span>
+            </button>
+        </div>
+    </div>
+</form>

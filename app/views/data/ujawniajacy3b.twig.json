@@ -10,37 +10,44 @@
     {
       "name": "ujawniający informację",
       "link": "/multistep/ujawniajacy2.html",
-      "active": true
+      "active": true,
+      "disabled": false
     },
     {
       "name": "otrzymujący informację",
       "link": "/multistep/otrzymujacy2.html",
-      "active": false
+      "active": false,
+      "disabled": true
     },
     {
       "name": "cel umowy",
       "link": "/multistep/cel-umowy.html",
-      "active": false
+      "active": false,
+      "disabled": true
     },
     {
       "name": "rodzaj informacji poufnych",
       "link": "/multistep/informacje-poufne.html",
-      "active": false
+      "active": false,
+      "disabled": true
     },
     {
       "name": "kara umowna",
       "link": "/multistep/kara-umowna.html",
-      "active": false
+      "active": false,
+      "disabled": true
     },
     {
       "name": "czas trwania umowy",
       "link": "/multistep/czas-trwania-umowy.html",
-      "active": false
+      "active": false,
+      "disabled": true
     },
     {
-      "name": "postanowienia umowy",
+      "name": "obowiązki po zakończeniu umowy",
       "link": "/multistep/postanowienia-umowy.html",
-      "active": false
+      "active": false,
+      "disabled": true
     }
   ]
 }

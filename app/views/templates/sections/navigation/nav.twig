@@ -1,7 +1,7 @@
 <nav class="nav">
     <div class="nav__items">
         {% for item in menu %}
-            <a href="{{ item.link }}" class="nav__item {% if item.active %}active{% endif %}">
+            <a href="{{ item.link }}" class="nav__item {% if item.active %}active{% endif %} {% if item.disabled %}disabled{% endif %}">
                 {{ item.name }}
             </a>
         {% endfor %}

@@ -1,5 +1,6 @@
 .form-page {
   padding: 10px 0;
+  height: 100vh;
   @include respond-to('medium') {
     padding: 60px 0;
   }
@@ -45,10 +46,10 @@
     flex: 1;
     order: 1;
     box-shadow: $box-shadow;
-    padding: 30px 20px;
-    @include respond-to('small') {
-      padding: 10xp 20px;
-    }
+    padding: 20px;
+    //@include respond-to('small') {
+    //  padding: 10px;
+    //}
   }
   &__nav {
     order: 2;

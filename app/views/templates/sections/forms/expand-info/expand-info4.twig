@@ -2,9 +2,18 @@
 <form class="multistep-form" id="expand-info4" action="">
 {#    <h2>{{ title }}</h2>#}
     <fieldset class="multistep-form__section">
-        <h5>Po zakończeniu umowy będą obowiązywały postanowienia umowy?
-            <a data-toggle="tooltip" data-placement="bottom" title="Mauris id vulputate sapien, ac bibendum nunc. Aenean sem enim, dapibus a metus in, viverra tristique justo." class="tooltip-info fas fa-question-circle"></a>
-        </h5>
+        <div class="multistep-form__tooltip">
+            <h5 class="multistep-form__tooltip-parent">Po zakończeniu umowy będą obowiązywały postanowienia umowy?
+                <span class="trigger fa fa-question"></span>
+                <div class="tooltip">
+                    <h5>
+                        <strong>Title</strong>
+                    </h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, sit?</p>
+                    <a class="tooltip-link" target="_blank" href="https://www.google.com"> google.com</a>
+                </div>
+            </h5>
+        </div>
         <div class="form-check form-check--show radio">
             <input class="form-check-input" type="radio" name="radioOptions12" id="radio12a" value="option1">
             <label class="form-check-label" for="radio12a">tak</label>

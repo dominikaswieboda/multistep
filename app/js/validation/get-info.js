@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    //Validate reveal-info2
+    //Validate get-info2
     $("#get-info2").validate({
         errorClass: "is-invalid",
         errorElement : 'div',
@@ -36,13 +36,13 @@ $(document).ready(function(){
             if($('#radio7')[0].checked) {
                 form.action = '/multistep/otrzymujacy3b.html';
             } else {
-                form.action = '/multistep/otrzymujacy34a.html';
+                form.action = '/multistep/otrzymujacy3a.html';
             }
             form.submit();
         }
     });
-    //Validate reveal-info34a
-    $("#get-info34a").validate({
+    //Validate get-info34a
+    $("#get-info3a, #get-info4a").validate({
         errorClass: "is-invalid",
         errorElement : 'div',
         focusInvalid: false,
@@ -53,7 +53,7 @@ $(document).ready(function(){
             inputUsername: {
                 required: true
             },
-            inputEmail4: {
+            inputEmail89a: {
                 required: true
             },
             inputPhone: {
@@ -63,7 +63,7 @@ $(document).ready(function(){
         messages: {
             inputName: 'Podaj imię',
             inputUsername: 'Podaj nazwisko',
-            inputEmail4: 'Podaj adres e-mail',
+            inputEmail89a: 'Podaj adres e-mail',
             inputPhone: 'Podaj numer telefonu',
         },
         invalidHandler: function(form, validator) {
@@ -79,7 +79,7 @@ $(document).ready(function(){
             form.submit();
         }
     });
-    //Validate reveal-info3b
+    //Validate get-info3b
     $("#get-info3b").validate({
         errorClass: "is-invalid",
         errorElement : 'div',
@@ -114,20 +114,23 @@ $(document).ready(function(){
         },
         submitHandler: function(form) {
             if($('#radio7b')[0].checked) {
-                form.action = '/multistep/otrzymujacy45b.html';
+                form.action = '/multistep/otrzymujacy4b.html';
             } else {
-                form.action = '/multistep/otrzymujacy46c.html';
+                form.action = '/multistep/otrzymujacy4c.html';
             }
             form.submit();
         }
     });
-    //Validate reveal-info45b
-    $("#get-info45b").validate({
+    //Validate get-info45b
+    $("#get-info4b, #get-info5b").validate({
         errorClass: "is-invalid",
         errorElement : 'div',
         focusInvalid: false,
         rules: {
-            inputName45b: {
+            inputNameCompany: {
+                required: true
+            },
+            inputName89b: {
                 required: true
             },
             inputUsername89b: {
@@ -141,6 +144,7 @@ $(document).ready(function(){
             }
         },
         messages: {
+            inputNameCompany: 'Podaj nazwę firmy',
             inputName89b: 'Podaj imię',
             inputUsername89b: 'Podaj nazwisko',
             inputEmail89b: 'Podaj adres e-mail',
@@ -159,12 +163,21 @@ $(document).ready(function(){
             form.submit();
         }
     });
-    //Validate reveal-info45b
-    $("#get-info46c").validate({
+    //Validate get-info46c
+    $("#get-info4c, #get-info5c, #get-info6c").validate({
         errorClass: "is-invalid",
         errorElement : 'div',
         focusInvalid: false,
         rules: {
+            inputNameCompany911c: {
+                required: true
+            },
+            inputEmail911c: {
+                required: true
+            },
+            inputPhone911c: {
+                required: true
+            },
             inputName911c: {
                 required: true
             },
@@ -176,6 +189,9 @@ $(document).ready(function(){
             }
         },
         messages: {
+            inputNameCompany911c: 'Podaj nazwę firmy',
+            inputEmail911c: 'Podaj adres e-mail',
+            inputPhone911c: 'Podaj numer telefonu',
             inputName911c: 'Podaj imię osoby reprezentującej',
             inputUsername911c: 'Podaj nazwisko osoby reprezentującej',
             inputStatus911c: 'Podaj status osoby reprezentującej',

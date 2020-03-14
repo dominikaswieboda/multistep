@@ -8,5 +8,8 @@
     .btn-cancel {
       margin-bottom: 40px;
     }
+    & + .add-person__content {
+      margin-top: 40px;
+    }
   }
 }

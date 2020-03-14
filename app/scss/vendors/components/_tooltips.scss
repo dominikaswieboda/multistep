@@ -1,14 +1,49 @@
+.trigger {
+  position: relative;
+  border: 1.5px solid $color-blue;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: $color-blue;
+  @include respond-to('small') {
+    margin-left: 5px;
+  }
+}
 .tooltip {
-  &-info {
-    display: inline-block;
+  background-color: $color-white;
+  box-shadow: $box-shadow-secondary;
+  color: $color-black;
+  padding: 10px;
+  position: absolute;
+  z-index: 999;
+  display: none;
+  max-width: 250px;
+  left: 0;
+  @include respond-to('small') {
+    left: auto;
+    right: 0;
   }
-  &-inner {
-    background-color: $color-gray !important;
+  @include respond-to('medium') {
+    right: 15%;
   }
-  &.bs-tooltip-bottom .arrow:before {
-    border-bottom-color: $color-gray !important;
+  h5 {
+    margin: 0 0 10px;
+    padding: 0;
   }
-  &.bs-tooltip-bottom .arrow:before {
-    border-bottom-color: $color-gray !important;
+  &.show {
+    opacity: 1;
+    display: block;
+  }
+  &-link {
+    color: $color-blue;
+    transition: $transition-base;
+    &:hover {
+      color: $color-gray;
+      text-decoration: none;
+    }
   }
 }

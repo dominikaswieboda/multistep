@@ -22,6 +22,9 @@
     &.active {
       font-weight: 700;
     }
+    &.disabled {
+      color: rgba($color-gray, 0.4);
+    }
     & + .nav__item {
       padding-top: 10px;
     }
