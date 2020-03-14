@@ -80,36 +80,36 @@
                     <nav class="nav">
     <div class="nav__items">
         
-            <a href="/multistep/data-umowy.html" class="nav__item ">
+            <a href="/multistep/data-umowy.html" class="nav__item  ">
                 data umowy
             </a>
         
-            <a href="/multistep/ujawniajacy2.html" class="nav__item ">
+            <a href="/multistep/ujawniajacy2.html" class="nav__item  ">
                 ujawniający informację
             </a>
         
-            <a href="/multistep/otrzymujacy2.html" class="nav__item active">
+            <a href="/multistep/otrzymujacy2.html" class="nav__item active ">
                 otrzymujący informację
             </a>
         
-            <a href="/multistep/cel-umowy.html" class="nav__item ">
+            <a href="/multistep/cel-umowy.html" class="nav__item  disabled">
                 cel umowy
             </a>
         
-            <a href="/multistep/informacje-poufne.html" class="nav__item ">
+            <a href="/multistep/informacje-poufne.html" class="nav__item  disabled">
                 rodzaj informacji poufnych
             </a>
         
-            <a href="/multistep/kara-umowna.html" class="nav__item ">
+            <a href="/multistep/kara-umowna.html" class="nav__item  disabled">
                 kara umowna
             </a>
         
-            <a href="/multistep/czas-trwania-umowy.html" class="nav__item ">
+            <a href="/multistep/czas-trwania-umowy.html" class="nav__item  disabled">
                 czas trwania umowy
             </a>
         
-            <a href="/multistep/postanowienia-umowy.html" class="nav__item ">
-                postanowienia umowy
+            <a href="/multistep/postanowienia-umowy.html" class="nav__item  disabled">
+                obowiązki po zakończeniu umowy
             </a>
         
     </div>
@@ -122,88 +122,50 @@
 </div>
                 </div>
                 <div class="form-page__content">
-                    <form class="multistep-form" id="get-info45b" action="/multistep/cel-umowy.html">
-    <!--  Wyskakuje wtedy kiedy naciśnieto jednoosobowa działalność gospodarcza -->
+                    <form class="multistep-form" id="get-info5c" action="/multistep/otrzymujacy6c.html">
+    <!--  Wyskakuje wtedy kiedy naciśnieto Spółka Akcyjna lub Spółka z ograniczoną odpowiedzialnością -->
     <fieldset class="multistep-form__section">
-        <legend>Dane firmy:</legend>
+        <legend>Dane kontaktowe otrzymującego informację:</legend>
         <div class="multistep-form__desc-heading">
             <p>Tu wpisujemy informacje dotyczące <strong>firmy, która otrzymuje</strong> informacje</p>
         </div>
         <div class="form-row">
-            <div class="form-group col-md-12">
-                <label for="inputNameCompany89b">Nazwa firmy</label>
-                <input type="text" class="form-control" id="inputNameCompany89b" name="inputNameCompany" placeholder="Nazwa firmy">
+            <div class="form-group col-sm-4">
+                <label for="inputStreet911c">Ulica</label>
+                <input type="text" class="form-control" id="inputStreet911c" name="inputStreet911c">
             </div>
-            <div class="form-group col-sm-6">
-                <label for="inputName89b">Imię</label>
-                <input type="text" class="form-control" id="inputName45b"  name="inputName89b" placeholder="Imię">
+            <div class="form-group col-sm-4">
+                <label for="inputNumberStreet911c">Numer ulicy</label>
+                <input type="text" class="form-control" id="inputNumberStreet911c" name="inputNumberStreet911c">
             </div>
-            <div class="form-group col-sm-6">
-                <label for="inputUsername89b">Nazwisko</label>
-                <input type="text" class="form-control" id="inputUsername45b"  name="inputUsername89b" placeholder="Nazwisko">
+            <div class="form-group col-sm-4">
+                <label for="inputNumberLocal911c">Numer lokalu</label>
+                <input type="text" class="form-control" id="inputNumberLocal911c" name="inputNumberLocal911c">
+            </div>
+            <div class="form-group col-sm-4">
+                <label for="inputCity911c">Miejscowość</label>
+                <input type="text" class="form-control" id="inputCity911c" name="inputCity911c">
+            </div>
+            <div class="form-group col-sm-4">
+                <label for="inputCityKey911c">Kod pocztowy</label>
+                <input type="text" class="form-control" id="inputCityKey911c" name="inputCityKey911c">
             </div>
         </div>
         <div class="form-row">
             <div class="form-group col-sm-6">
-                <label for="inputEmail89b">Email</label>
-                <input type="email" class="form-control" id="inputEmail45b" name="inputEmail89b" placeholder="Email">
+                <label for="inputEmail911c">Email</label>
+                <input type="email" class="form-control" id="inputEmail911c" name="inputEmail911c" placeholder="Email">
             </div>
             <div class="form-group col-sm-6">
-                <label for="inputPhone89b">Telefon</label>
-                <input type="tel" class="form-control" id="inputPhone45b" name="inputPhone89b" placeholder="Telefon">
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="form-group col-sm-6">
-                <label for="inputPesel89b">Pesel</label>
-                <input type="number" class="form-control" id="inputPesel45b" name="inputPesel89b">
-            </div>
-            <div class="form-group col-sm-6">
-                <label for="inputID89b">Seria i numer dowodu osobistego</label>
-                <input type="text" class="form-control" id="inputID89b" name="inputID89b">
-            </div>
-            <div class="form-group col-sm-6">
-                <label for="inputPassport89b">Seria i numer paszport</label>
-                <input type="text" class="form-control" id="inputPassport89b" name="inputPassport89b">
-            </div>
-            <div class="form-group col-sm-12">
-                <label for="inputRegon89b">Regon</label>
-                <input type="text" class="form-control" id="inputRegon45b" name="inputRegon89b">
-            </div>
-            <div class="form-group col-md-12">
-                <label for="inputNip89b">Nip</label>
-                <input type="text" class="form-control" id="inputNip45b" name="inputNip89b">
-            </div>
-        </div>
-    </fieldset>
-    <fieldset class="multistep-form__section">
-        <div class="form-row">
-            <div class="form-group col-sm-4">
-                <label for="inputStreet89b">Ulica</label>
-                <input type="text" class="form-control" id="inputStreet89b" name="inputStreet89b">
-            </div>
-            <div class="form-group col-sm-4">
-                <label for="inputNumberStreet89b">Numer ulicy</label>
-                <input type="text" class="form-control" id="inputNumberStreet89b" name="inputNumberStreet89b">
-            </div>
-            <div class="form-group col-sm-4">
-                <label for="inputNumberLocal89b">Numer lokalu</label>
-                <input type="text" class="form-control" id="inputNumberLocal45b" name="inputNumberLocal89b">
-            </div>
-            <div class="form-group col-sm-4">
-                <label for="inputCity89b">Miejscowość</label>
-                <input type="text" class="form-control" id="inputCity89b" name="inputCity89b">
-            </div>
-            <div class="form-group col-sm-4">
-                <label for="inputCityKey89b">Kod pocztowy</label>
-                <input type="text" class="form-control" id="inputCityKey89b" name="inputCityKey89b">
+                <label for="inputPhone911c">Telefon</label>
+                <input type="tel" class="form-control" id="inputPhone911c" name="inputPhone911c" placeholder="Telefon">
             </div>
         </div>
     </fieldset>
     <div class="multistep-form__actions">
         <div class="multistep-form__action">
             <div class="multistep-form__action__prev">
-                <a href="/multistep/otrzymujacy3b.html" class="btn btn--secondary">
+                <a href="/multistep/otrzymujacy4c.html" class="btn btn--secondary">
                     <i class="fas fa-arrow-left"></i>
                     wróć
                 </a>
@@ -248,8 +210,6 @@
 <!-- Datepicker -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/i18n/datepicker.pl-PL.min.js"></script>
-
-
 <!-- jQuery Validate -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
 <!-- Main script -->

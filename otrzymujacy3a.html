@@ -8,7 +8,7 @@
 <link rel="shortcut icon" href="./assets/images/favicon.ico"/>
 
 <!-- Primary Meta Tags -->
-<title>Ujawniający informacje</title>
+<title>Otrzymujacy informacje</title>
 <meta name="title" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
 <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
 <meta name="keywords" content="Lorem, ipsum, dolor, sit, amet, consectetur, adipiscing, elit">
@@ -84,11 +84,11 @@
                 data umowy
             </a>
         
-            <a href="/multistep/ujawniajacy2.html" class="nav__item active ">
+            <a href="/multistep/ujawniajacy2.html" class="nav__item  ">
                 ujawniający informację
             </a>
         
-            <a href="/multistep/otrzymujacy2.html" class="nav__item  disabled">
+            <a href="/multistep/otrzymujacy2.html" class="nav__item active ">
                 otrzymujący informację
             </a>
         
@@ -122,34 +122,42 @@
 </div>
                 </div>
                 <div class="form-page__content">
-                    <form class="multistep-form" id="reveal-info2" action="">
-    <h2>Ujawniający informacje</h2>
+                    <form class="multistep-form" id="get-info3a" action="/multistep/otrzymujacy4a.html">
+    <!--  Wyskakuje wtedy kiedy naciśnieto NIE -->
     <fieldset class="multistep-form__section">
-        <div class="multistep-form__tooltip">
-            <h5 class="multistep-form__tooltip-parent">Prowadzi działalność gospodarczą:
-                <span class="trigger fa fa-question"></span>
-                <div class="tooltip">
-                    <h5>
-                        <strong>Title</strong>
-                    </h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, sit?</p>
-                    <a class="tooltip-link" target="_blank" href="https://www.google.com"> google.com</a>
-                </div>
-            </h5>
+        <legend>Dane osobowe otrzymującego:</legend>
+        <div class="multistep-form__desc-heading">
+            <p>Tu wpisujemy informacje dotyczące <strong>osoby, która otrzymuje</strong> informację</p>
         </div>
-        <div class="form-check radio">
-            <input class="form-check-input" type="radio" name="radioOptions2" id="radio1" value="option1">
-            <label class="form-check-label" for="radio1">tak</label>
+        <div class="form-row">
+            <div class="form-group col-sm-12">
+                <label for="inputName89a" class="star-red">Imię</label>
+                <input type="text" class="form-control" id="inputName89a" name="inputName" placeholder="Imię">
+            </div>
+            <div class="form-group col-sm-12">
+                <label for="inputUsername89a" class="star-red">Nazwisko</label>
+                <input type="text" class="form-control" id="inputUsername89a" name="inputUsername" placeholder="Nazwisko">
+            </div>
         </div>
-        <div class="form-check radio">
-            <input class="form-check-input" type="radio" name="radioOptions2" id="radio2" value="option2">
-            <label class="form-check-label" for="radio2">nie</label>
+        <div class="form-row">
+            <div class="form-group col-sm-6">
+                <label for="inputPesel89a">Pesel</label>
+                <input type="number" class="form-control" id="inputPesel89a">
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="inputPassport89a">Seria i numer paszport</label>
+                <input type="text" class="form-control" id="inputPassport89a">
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="inputID89a">Seria i numer dowodu osobistego</label>
+                <input type="text" class="form-control" id="inputID89a">
+            </div>
         </div>
     </fieldset>
     <div class="multistep-form__actions">
         <div class="multistep-form__action">
             <div class="multistep-form__action__prev">
-                <a href="/multistep/data-umowy.html" class="btn btn--secondary">
+                <a href="/multistep/otrzymujacy2.html" class="btn btn--secondary">
                     <i class="fas fa-arrow-left"></i>
                     wróć
                 </a>

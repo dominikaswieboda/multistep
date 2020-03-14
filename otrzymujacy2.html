@@ -80,36 +80,36 @@
                     <nav class="nav">
     <div class="nav__items">
         
-            <a href="/multistep/data-umowy.html" class="nav__item ">
+            <a href="/multistep/data-umowy.html" class="nav__item  ">
                 data umowy
             </a>
         
-            <a href="/multistep/ujawniajacy2.html" class="nav__item ">
+            <a href="/multistep/ujawniajacy2.html" class="nav__item  ">
                 ujawniający informację
             </a>
         
-            <a href="/multistep/otrzymujacy2.html" class="nav__item active">
+            <a href="/multistep/otrzymujacy2.html" class="nav__item active ">
                 otrzymujący informację
             </a>
         
-            <a href="/multistep/cel-umowy.html" class="nav__item ">
+            <a href="/multistep/cel-umowy.html" class="nav__item  disabled">
                 cel umowy
             </a>
         
-            <a href="/multistep/informacje-poufne.html" class="nav__item ">
+            <a href="/multistep/informacje-poufne.html" class="nav__item  disabled">
                 rodzaj informacji poufnych
             </a>
         
-            <a href="/multistep/kara-umowna.html" class="nav__item ">
+            <a href="/multistep/kara-umowna.html" class="nav__item  disabled">
                 kara umowna
             </a>
         
-            <a href="/multistep/czas-trwania-umowy.html" class="nav__item ">
+            <a href="/multistep/czas-trwania-umowy.html" class="nav__item  disabled">
                 czas trwania umowy
             </a>
         
-            <a href="/multistep/postanowienia-umowy.html" class="nav__item ">
-                postanowienia umowy
+            <a href="/multistep/postanowienia-umowy.html" class="nav__item  disabled">
+                obowiązki po zakończeniu umowy
             </a>
         
     </div>
@@ -125,9 +125,18 @@
                     <form class="multistep-form" id="get-info2" action="">
     <h2>Otrzymujacy informacje</h2>
     <fieldset class="multistep-form__section">
-        <h5>Prowadzi działalność gospodarczą:
-            <a data-toggle="tooltip" data-placement="bottom" title="Mauris id vulputate sapien, ac bibendum nunc. Aenean sem enim, dapibus a metus in, viverra tristique justo." class="tooltip-info fas fa-question-circle"></a>
-        </h5>
+        <div class="multistep-form__tooltip">
+            <h5 class="multistep-form__tooltip-parent">Prowadzi działalność gospodarczą:
+                <span class="trigger fa fa-question"></span>
+                <div class="tooltip">
+                    <h5>
+                        <strong>Title</strong>
+                    </h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, sit?</p>
+                    <a class="tooltip-link" target="_blank" href="https://www.google.com"> google.com</a>
+                </div>
+            </h5>
+        </div>
         <div class="form-check radio">
             <input class="form-check-input" type="radio" name="radioOptions7" id="radio7" value="option7">
             <label class="form-check-label" for="radio7">tak</label>
@@ -140,7 +149,7 @@
     <div class="multistep-form__actions">
         <div class="multistep-form__action">
             <div class="multistep-form__action__prev">
-                <a href="/multistep/ujawniajacy34a.html" class="btn btn--secondary">
+                <a href="/multistep/ujawniajacy4a.html" class="btn btn--secondary">
                     <i class="fas fa-arrow-left"></i>
                     wróć
                 </a>
@@ -185,8 +194,6 @@
 <!-- Datepicker -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/i18n/datepicker.pl-PL.min.js"></script>
-
-
 <!-- jQuery Validate -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
 <!-- Main script -->

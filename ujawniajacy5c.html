@@ -80,36 +80,36 @@
                     <nav class="nav">
     <div class="nav__items">
         
-            <a href="/multistep/data-umowy.html" class="nav__item ">
+            <a href="/multistep/data-umowy.html" class="nav__item  ">
                 data umowy
             </a>
         
-            <a href="/multistep/ujawniajacy2.html" class="nav__item active">
+            <a href="/multistep/ujawniajacy2.html" class="nav__item active ">
                 ujawniający informację
             </a>
         
-            <a href="/multistep/otrzymujacy2.html" class="nav__item ">
+            <a href="/multistep/otrzymujacy2.html" class="nav__item  disabled">
                 otrzymujący informację
             </a>
         
-            <a href="/multistep/cel-umowy.html" class="nav__item ">
+            <a href="/multistep/cel-umowy.html" class="nav__item  disabled">
                 cel umowy
             </a>
         
-            <a href="/multistep/informacje-poufne.html" class="nav__item ">
+            <a href="/multistep/informacje-poufne.html" class="nav__item  disabled">
                 rodzaj informacji poufnych
             </a>
         
-            <a href="/multistep/kara-umowna.html" class="nav__item ">
+            <a href="/multistep/kara-umowna.html" class="nav__item  disabled">
                 kara umowna
             </a>
         
-            <a href="/multistep/czas-trwania-umowy.html" class="nav__item ">
+            <a href="/multistep/czas-trwania-umowy.html" class="nav__item  disabled">
                 czas trwania umowy
             </a>
         
-            <a href="/multistep/postanowienia-umowy.html" class="nav__item ">
-                postanowienia umowy
+            <a href="/multistep/postanowienia-umowy.html" class="nav__item  disabled">
+                obowiązki po zakończeniu umowy
             </a>
         
     </div>
@@ -122,76 +122,50 @@
 </div>
                 </div>
                 <div class="form-page__content">
-                    <form class="multistep-form" id="reveal-info34a" action="/multistep/otrzymujacy2.html">
-    <!--  Wyskakuje wtedy kiedy naciśnieto NIE -->
+                    <form class="multistep-form" id="reveal-info5c" action="/multistep/ujawniajacy6c.html">
+    <!--  Wyskakuje wtedy kiedy naciśnieto Spółka Akcyjna lub Spółka z ograniczoną odpowiedzialnością -->
     <fieldset class="multistep-form__section">
-        <legend>Dane osobowe ujawniającego:</legend>
+        <legend>Dane kontaktowe ujawniającego informacje:</legend>
         <div class="multistep-form__desc-heading">
-            <p>Tu wpisujemy informacje dotyczące <strong>osoby, która udostępnia</strong> swoje informacje innej osobie lub firmie</p>
+            <p>Tu wpisujemy informacje dotyczące <strong>firmy, która udostępnia</strong> informacje</p>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-sm-4">
+                <label for="inputStreet46c">Ulica</label>
+                <input type="text" class="form-control" id="inputStreet46c" name="inputStreet46c">
+            </div>
+            <div class="form-group col-sm-4">
+                <label for="inputNumberStreet46c">Numer ulicy</label>
+                <input type="text" class="form-control" id="inputNumberStreet46c" name="inputNumberStreet46c">
+            </div>
+            <div class="form-group col-sm-4">
+                <label for="inputNumberLocal46c">Numer lokalu</label>
+                <input type="text" class="form-control" id="inputNumberLocal46c" name="inputNumberLocal46c">
+            </div>
+            <div class="form-group col-sm-4">
+                <label for="inputCity46c">Miejscowość</label>
+                <input type="text" class="form-control" id="inputCity46c" name="inputCity46c">
+            </div>
+            <div class="form-group col-sm-4">
+                <label for="inputCityKey46c">Kod pocztowy</label>
+                <input type="text" class="form-control" id="inputCityKey46c" name="inputCityKey46c">
+            </div>
         </div>
         <div class="form-row">
             <div class="form-group col-sm-6">
-                <label for="inputName" class="star-red">Imię</label>
-                <input type="text" class="form-control" id="inputName" name="inputName" placeholder="Imię">
+                <label for="inputEmail46c" class="star-red">Email</label>
+                <input type="email" class="form-control" id="inputEmail46c" name="inputEmail46c" placeholder="Email">
             </div>
             <div class="form-group col-sm-6">
-                <label for="inputUsername">Nazwisko</label>
-                <input type="text" class="form-control" id="inputUsername" name="inputUsername" placeholder="Nazwisko">
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="form-group col-sm-6">
-                <label for="inputEmail4" class="star-red">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" name="inputEmail4" placeholder="Email">
-            </div>
-            <div class="form-group col-sm-6">
-                <label for="inputPhone">Telefon</label>
-                <input type="tel" class="form-control" id="inputPhone" name="inputPhone" placeholder="Telefon">
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="form-group col-sm-6">
-                <label for="inputPesel">Pesel</label>
-                <input type="number" class="form-control" id="inputPesel">
-            </div>
-            <div class="form-group col-sm-6">
-                <label for="inputPassport">Seria i numer paszport</label>
-                <input type="text" class="form-control" id="inputPassport">
-            </div>
-            <div class="form-group col-sm-6">
-                <label for="inputID">Seria i numer dowodu osobistego</label>
-                <input type="text" class="form-control" id="inputID">
-            </div>
-        </div>
-    </fieldset>
-    <fieldset class="multistep-form__section">
-        <div class="form-row">
-            <div class="form-group col-sm-4">
-                <label for="inputStreet">Ulica</label>
-                <input type="text" class="form-control" id="inputStreet">
-            </div>
-            <div class="form-group col-sm-4">
-                <label for="inputNumberStreet">Numer ulicy</label>
-                <input type="text" class="form-control" id="inputNumberStreet">
-            </div>
-            <div class="form-group col-sm-4">
-                <label for="inputNumberLocal">Numer lokalu</label>
-                <input type="text" class="form-control" id="inputNumberLocal">
-            </div>
-            <div class="form-group col-sm-4">
-                <label for="inputCity">Miejscowość</label>
-                <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="form-group col-sm-4">
-                <label for="inputCityKey">Kod pocztowy</label>
-                <input type="text" class="form-control" id="inputCityKey">
+                <label for="inputPhone46c" class="star-red">Telefon</label>
+                <input type="tel" class="form-control" id="inputPhone46c" name="inputPhone46c" placeholder="Telefon">
             </div>
         </div>
     </fieldset>
     <div class="multistep-form__actions">
         <div class="multistep-form__action">
             <div class="multistep-form__action__prev">
-                <a href="/multistep/ujawniajacy3b.html" class="btn btn--secondary">
+                <a href="/multistep/ujawniajacy4c.html" class="btn btn--secondary">
                     <i class="fas fa-arrow-left"></i>
                     wróć
                 </a>
@@ -236,8 +210,6 @@
 <!-- Datepicker -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/i18n/datepicker.pl-PL.min.js"></script>
-
-
 <!-- jQuery Validate -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
 <!-- Main script -->
